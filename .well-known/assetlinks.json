@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.kyowon.itweb.smartplan.android",
+            "sha256_cert_fingerprints": [
+                "F3:5B:6E:6D:3B:A9:68:50:8B:07:BF:48:F4:4B:3F:FE:11:B3:68:72:45:D2:31:51:95:49:69:B3:7C:BC:D8:2A"
+            ]
+        }
+    }
+]

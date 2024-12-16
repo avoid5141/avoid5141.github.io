@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+      {
+        "appID": "2ND3335NP3.com.kyowon.itweb.smartplan.ios",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

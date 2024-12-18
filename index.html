@@ -32,11 +32,12 @@
 
       if (isIOS || isAndroid) {
         // 앱 실행 시도
-        const startTime = Date.now();
-        const iframe = document.createElement("iframe");
-        iframe.style.display = "none";
-        iframe.src = deepLinkUrl;
-        document.body.appendChild(iframe);
+        // const startTime = Date.now();
+        // const iframe = document.createElement("iframe");
+        // iframe.style.display = "none";
+        // iframe.src = deepLinkUrl;
+        // document.body.appendChild(iframe);
+        window.location.href = deepLinkUrl;
 
         // 앱 설치 여부 확인
         setTimeout(() => {

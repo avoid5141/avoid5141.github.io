@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deep Link Handler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // 현재 URL에서 'link' 파라미터 추출
@@ -19,16 +39,17 @@
       const isAndroid = /Android/i.test(navigator.userAgent);
 
       const appScheme = "itwebsmartplan://avoid5141.github.io"; // 앱 딥링크 스킴
-      const iosStoreUrl = "https://apps.apple.com/app/id123456789"; // iOS 앱스토어 URL
-      const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.example.app"; // Android 스토어 URL
+      const iosStoreUrl = "https://apps.apple.com/app/1519021005"; // iOS 앱스토어 URL
+      const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.kyowon.kyowonsmartplan.android"; // Android 스토어 URL
       const fallbackStoreUrl = isIOS ? iosStoreUrl : androidStoreUrl;
 
       const deepLinkUrl = `${appScheme}?link=${encodeURIComponent(link)}`;
 
       // 수동 링크 설정
+      // Button actions
+      document.getElementById("openAppButton").href = deepLinkUrl;
+      document.getElementById("openStoreButton").href = fallbackStoreUrl;
       const manualLink = document.getElementById("manual-link");
-      manualLink.href = fallbackStoreUrl;
-      manualLink.textContent = isIOS ? "Go to App Store" : "Go to Play Store";
 
       if (isIOS || isAndroid) {
         // 앱 실행 시도
@@ -56,7 +77,10 @@
   </script>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected automatically, please <a id="manual-link">click here</a>.</p>
+  <h1>Dynamic Link Handler</h1>
+  <p>Redirecting you to the app...</p>
+  <p>If nothing happens, use the buttons below:</p>
+  <a id="openAppButton" class="button" href="#">Open App</a>
+  <a id="openStoreButton" class="button" href="#">Go to Store</a>
 </body>
 </html>

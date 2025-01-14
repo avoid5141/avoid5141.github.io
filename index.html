@@ -58,17 +58,21 @@
         // iframe.style.display = "none";
         // iframe.src = deepLinkUrl;
         // document.body.appendChild(iframe);
-        window.location.href = deepLinkUrl;
-
-        // 앱 설치 여부 확인
-        setTimeout(() => {
-          const elapsedTime = Date.now() - startTime;
-
-          // iOS에서는 딥링크 호출 실패 시 바로 fallback이 발생하지 않으므로 시간 기반으로 처리
-          if (elapsedTime < 2000) {
-            window.location.href = fallbackStoreUrl;
-          }
-        }, 1500); // 1.5초 대기 후 스토어로 이동
+        try{
+          window.location.href = deepLinkUrl;
+  
+          // 앱 설치 여부 확인
+          setTimeout(() => {
+            const elapsedTime = Date.now() - startTime;
+  
+            // iOS에서는 딥링크 호출 실패 시 바로 fallback이 발생하지 않으므로 시간 기반으로 처리
+            if (elapsedTime < 2000) {
+              window.location.href = fallbackStoreUrl;
+            }
+          }, 1500); // 1.5초 대기 후 스토어로 이동
+        } catch (error) {
+          window.location.href = fallbackStoreUrl;
+        }
       } else {
         // 지원되지 않는 플랫폼
         alert("This feature is only supported on iOS or Android devices.");

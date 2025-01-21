@@ -11,3 +11,5 @@
 [PRD_HOME/launch_index.html](https://avoid5141.github.io?link=https%3A%2F%2Fedu.kyowonsmartplan.co.kr%3A4495%2FProduct%2FProductDetail%3FproductId%3DC00038)
 
 [asis](kyowonsmartplan://dl=https%3A%2F%2Fedu.kyowonsmartplan.co.kr%3A4495%2FProduct%2FProductDetail%3FproductId%3DC00038)
+
+[firebase](https://kyowonsmartplan.page.link/XBSh)

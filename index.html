@@ -46,7 +46,7 @@
       const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.kyowon.kyowonsmartplan.android"; // Android 스토어 URL
       const fallbackStoreUrl = isIOS ? iosStoreUrl : androidStoreUrl;
 
-      const deepLinkUrl = `${appScheme}?push-intent-link=${encodeURIComponent(link)}`;
+      const deepLinkUrl = `${appScheme}?${encodeURIComponent(link)}`;
 
       // 수동 링크 설정
       // Button actions

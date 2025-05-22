@@ -38,12 +38,12 @@
       const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
       const isAndroid = /Android/i.test(navigator.userAgent);
 
-      const appScheme = "kmembers://avoid5141.github.io"; // 앱 딥링크 스킴
+      const appScheme = "kmembers://kyowon"; // 앱 딥링크 스킴
       const iosStoreUrl = "https://apps.apple.com/app/1519021005"; // iOS 앱스토어 URL
       const androidStoreUrl = "https://play.google.com/store/apps/details?id=com.kyowon.kyowonsmartplan.android"; // Android 스토어 URL
       const fallbackStoreUrl = isIOS ? iosStoreUrl : androidStoreUrl;
 
-      const deepLinkUrl = `${appScheme}?link=${encodeURIComponent(link)}`;
+      const deepLinkUrl = `${appScheme}?push-intent-link=${encodeURIComponent(link)}`;
 
       // 수동 링크 설정
       // Button actions

@@ -18,7 +18,7 @@
 
 [kmem](https://avoid5141.github.io?link=https%3A%2F%2Fm.kwmembers.com%2Fbest100%2Fs_Best100List.do)
 
-[kmem_ios](https://avoid5141.github.io?link=https%3A%2F%2Fwww.kwmembers.com%2Fbest100%2Fs_Best100List.do)
+[kmem_ios](https://avoid5141.github.io?link=https%3A%2F%2Fwww.kwmembers.com%2Fbest100%2FBest100List.do)
 
 
 [채움1](https://kyowonsmartplan.page.link/qeVt)

@@ -27,3 +27,6 @@
 [채움2](https://kyowonsmartplan.page.link/6pjW)
 
 [PRD_SP](https://avoid5141.github.io/sp.html?link=https%3A%2F%2Fedu.kyowonsmartplan.co.kr%3A4495%2FProduct%2FProductDetail%3FproductId%3DC00038)
+
+[채움새링크](https://edu.kyowonsmartplan.co.kr/DL?link=aWUi)
+
